@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:slim
 
 MAINTAINER Jorge Arias <mail@jorgearias.cl>
 
