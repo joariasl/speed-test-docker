@@ -1,9 +1,6 @@
-FROM alpine:latest
+FROM node:lts-alpine
 
-MAINTAINER Jorge Arias <mail@jorgearias.cl>
-
-RUN apk update && apk add nodejs \
-  && rm -rf /var/cache/apk/*
+LABEL maintainer="Jorge Arias <mail@jorgearias.cl>"
 
 RUN npm install --global speed-test \
   && rm -rf /root/.npm
